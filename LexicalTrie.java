@@ -184,27 +184,4 @@ public class LexicalTrie {
         }
         return result;
     }
-
-    public static void main(String[] args) {
-        LexicalTrie t = new LexicalTrie("abcdefghijklmnopqrstuvwxyz");
-        t.insertPrefix("hello");
-        t.insert("zoomonkeys");
-        t.insert("jish");
-        t.insert("goodbyz");
-        t.insert("hey");
-        t.insert("jozh");
-        t.insert("goodbye");
-        t.insert("hello");
-        t.insert("josh");
-        t.insert("apple");
-        System.out.println(t.find("hell", false));
-        System.out.println(t.find("hello", true));
-        System.out.println(t.find("good", false));
-        System.out.println(t.find("bye", false));
-        System.out.println(t.find("heyy", false));
-        System.out.println(t.find("hell", true));
-        for (String s : t.getStrings()) {
-            System.out.println(s); 
-        }
-    }
 }
